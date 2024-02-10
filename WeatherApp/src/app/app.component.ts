@@ -1,17 +1,26 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { DecimalPipe } from '@angular/common';
-
-
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { SearchFormComponent } from './search-form/search-form.component'
+ 
+ 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
-  providers: [DecimalPipe],
-  
+  styleUrls: ['./app.component.css'],
+  imports: [
+    ReactiveFormsModule,
+    FormsModule,
+    SearchFormComponent
+  ]
 })
 export class AppComponent {
-  title = 'WeatherApp';
+ 
+  handleFormSubmission(city: string): void {
+    console.log('Form submitted with city:', city);
+    // Handle the form value here
+  }
+ 
+ 
+  title = 'Weather App';
 }

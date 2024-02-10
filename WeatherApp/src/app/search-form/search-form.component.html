@@ -1,0 +1,17 @@
+<div class="search-container">
+  <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+    <input
+      type="text"
+      class="search-input"
+      placeholder="Search City"
+      formControlName="city"
+      id="city"
+    />
+    <div
+      *ngIf="searchForm.get('city')?.invalid && searchForm.get('city')?.touched"
+    >
+      City is required and must be at least 3 characters.
+    </div>
+    <button class="search-button" type="submit">Submit</button>
+  </form>
+</div>

@@ -8,6 +8,30 @@
     --shadow-light: rgba(255,255,255,0.1);
     
 }
+.search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 10px;
+}
+
+.search-input{
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-button{
+    padding: 10px 20px;
+    background-color: var(--blue-2);
+    color: #ededed;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+
+}
 
 *{
     margin: 0;
@@ -15,6 +39,8 @@
     box-sizing: border-box;
     
 }
+
+
 
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
