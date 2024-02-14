@@ -22,7 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
 export class AppComponent {
 
   
-  weatherData = {};
+  weatherData:any;
 
   constructor(private weatherService: WeatherService) { }
  
@@ -41,7 +41,7 @@ export class AppComponent {
 
     });
 
-    console.log(this.weatherData);
+    //console.log(this.weatherData);
   }
 
   

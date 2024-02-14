@@ -27,6 +27,8 @@ export class SearchFormComponent implements OnInit {
     if (this.searchForm.valid) {
       const cityValue = this.searchForm.get('city')?.value;
       this.formSubmitted.emit(cityValue);
+
+      
     }
   }
 }
