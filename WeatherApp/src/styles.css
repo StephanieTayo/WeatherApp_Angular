@@ -120,14 +120,18 @@ body{
     font-size: 4em;
     font-weight: 900;
 }
-
+.more-info{
+    color: var(--white);
+    font-weight: 500;
+    
+}
 .more-info-label{
     color: var(--white);
 }
 
 .more-info-container{
     flex: 1;
-    background-color: var(--shadow-light); 
+    background-color: var(--white); 
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     margin-top: 1em;
@@ -154,12 +158,13 @@ body{
 }
 
 .info-block-label img{
-    width: 1.5em;
+    width: 3em;
+    border-radius: 10%;
 
 }
 
 .info-block-label span{
-    color: var(--white);
+    color: var(--blue-2);
     font-size: 0.8em;
 
 }
@@ -169,5 +174,5 @@ body{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    color: var(--white);
+    color: var(--blue-2);
 }

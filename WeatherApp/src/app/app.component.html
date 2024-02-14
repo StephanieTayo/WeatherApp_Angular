@@ -1,14 +1,13 @@
 <search-form (formSubmitted)="handleFormSubmission($event)"></search-form>
 <div class="container">
   <div class="upper-data">
-    <img src="../assets/hot.png" />
-
     <div class="weather-data">
       <div class="location">
         {{ weatherData?.name }}
       </div>
-      <div class="temperature"></div>
-      <h1>{{ weatherData?.main.feels_like }}</h1>
+      <div class="temperature">
+        {{ weatherData?.main.feels_like }}
+      </div>
     </div>
   </div>
 
@@ -17,10 +16,7 @@
     <div class="more-info-container">
       <div class="info-block">
         <div class="info-block-label">
-          <img
-            src="../assets/min.jpg"
-            style="max-width: 40px; max-height: 40px"
-          />
+          <img src="../assets/min.jpg" />
           <span>min</span>
         </div>
         <div class="info-block-value">
