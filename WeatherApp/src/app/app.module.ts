@@ -6,7 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
-  declarations: [
+  declarations: [ AppComponent
   ],
   imports: [
     BrowserModule,
@@ -15,6 +15,6 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule
   ],
   providers: [],
-  bootstrap: []
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
